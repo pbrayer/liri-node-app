@@ -46,7 +46,7 @@ function omdbLiri (movieLength) {
     var movieUrl = "http://www.omdbapi.com/?t=" + movie.trim() + "&y=&plot=short&apikey=trilogy";
     axios.get(movieUrl).then(
         function(response){
-            console.log("The movie's rating is: " + response.data.Title);
+            console.log("\nThe movie's rating is: " + response.data.Title);
             console.log("And it was released in: " + response.data.Released)
             console.log("The movie's IMDB rating is: " + response.data.imdbRating);
             console.log("The movie's RottenTomatoes rating is: " + response.data.Ratings[1].Value);
